@@ -34,7 +34,7 @@ class _LessonQuestionState extends State<LessonQuestion> {
         context: context,
         builder: (context) => AlertDialog(
           title: const Text('Bonne réponse !'),
-          content: Text('Félicitations, vous avez trouvé la réponse !'),
+          content: const Text('Félicitations, vous avez trouvé la réponse !'),
           actions: [
             ElevatedButton(
               onPressed: () {

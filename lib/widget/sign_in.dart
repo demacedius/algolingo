@@ -1,3 +1,5 @@
+import 'package:algolingo/main.dart';
+import 'package:algolingo/widget/transition_slide.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -58,12 +60,7 @@ class _LoginFormState extends State<LoginForm> {
 
   void _login() {
     if (_formKey.currentState!.validate()) {
-      // Logique de connexion avec les identifiants de l'utilisateur
-      // Utilisez les valeurs _emailController.text et _passwordController.text
-      // pour effectuer la connexion
-      // ...
-      // Si la connexion réussit, effectuez l'action appropriée (par exemple, navigation vers une autre page)
-      // Si la connexion échoue, affichez un message d'erreur
+      Navigator.push(context, SlideRightRoute(page: Main()));
     }
   }
 
